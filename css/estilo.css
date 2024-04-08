@@ -30,8 +30,8 @@ nav ul li{
 }
 
 nav ul li:hover {
-    background: #070324; /* Cambia el color de fondos cuando se pasa el cursor sobre el elemento */
-    transform: scale(0.9); /* Aumenta el tamaño del elemento */
+    background: #070324;
+    transform: scale(0.9);
 }
 
 nav ul li a{
@@ -45,13 +45,13 @@ nav ul li a{
 }
 
 nav ul li:hover a{
-    color: #ffffff; /* Cambia el color del texto cuando se pasa el cursor por encima */
-    transform: scale(0.9); /* Aumenta el tamaño del elemento */
+    color: #ffffff;
+    transform: scale(0.9);
 }
 
 nav ul li a:active {
-    color: #000000; /* Cambia el color del texto cuando se selecciona el elemento */
-    transform: scale(0.9); /* Reduce el tamaño del elemento */
+    color: #000000;
+    transform: scale(0.9);
 }
 section{
     background: url("../images/fondos/fondo-section.jpg") no-repeat center center fixed;
@@ -71,11 +71,11 @@ section{
 
 }
 section h2 {
-    margin-bottom: 10px; /* Ajusta este valor para cambiar el espacio debajo del h2 */
+    margin-bottom: 10px;
 }
 
 section p {
-    margin-top: 5px; /* Ajusta este valor para cambiar el espacio encima del p */
+    margin-top: 5px;
 }
 
 .accesos-rapidos{
@@ -99,8 +99,8 @@ section p {
     transition: all 0.3s ease;
 }
 .accesos-rapidos ul li:hover {
-    background: #070324; /* Cambia el color de fondos cuando se pasa el cursor sobre el elemento */
-    transform: scale(0.9); /* Aumenta el tamaño del elemento */
+    background: #070324;
+    transform: scale(0.9);
 }
 .accesos-rapidos ul li a{
     font-family: "Arial";
@@ -113,7 +113,7 @@ section p {
     justify-content: center;
 }
 .accesos-rapidos ul li a .icono {
-    margin-bottom: 10px; /* Ajusta este valor para cambiar el espacio entre el iconos y el nombre */
+    margin-bottom: 10px;
 }
 
 .accesos-rapidos-ampliados{
@@ -215,16 +215,20 @@ footer p{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 10px; /* Ajusta este valor para cambiar el espacio entre los grupos de entrada */
+    margin-bottom: 10px;
 }
 
+.contenedor-formulario .input-group input {
+   padding-left: 10px;
+}
 .contenedor-formulario .input-group label {
-    width: 6cm; /* Ajusta este valor para cambiar el ancho de los label */
+    width: 6cm;
     text-align: left;
 }
 .contenedor-formulario .input-group input,textarea,select {
-    width: 10cm; /* Ajusta este valor para cambiar el ancho de los input */
+    width: 10cm;
     height: 25px;
+    border-radius: 5px;
 }
 .contenedor-formulario .input-group input[type="date"] {
     width: 381px;
@@ -232,11 +236,11 @@ footer p{
 }
 
 .contenedor-formulario .input-group select {
-    width: 385px;
+    width: 393px;
     text-align: center;
 }
 .contenedor-formulario .input-group textarea {
-    height: 50px;
+    width: 386px;
 }
 .contenedor-formulario .input-group input[type="submit"] {
     width: 100px;
@@ -253,19 +257,19 @@ footer p{
     align-items: flex-end;
 }
 .contenedor-formulario form input[type="submit"] {
-    background-color: #070324; /* Cambia el color de fondos del botón */
-    color: #ffffff; /* Cambia el color del texto del botón */
-    border-radius: 5px; /* Añade bordes redondeados al botón */
-    padding: 10px 20px; /* Añade relleno alrededor del texto del botón */
-    font-size: 20px; /* Cambia el tamaño del texto del botón */
-    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima del botón */
-    transition: background-color 0.3s ease; /* Añade una transición suave al cambiar el color de fondos */
+    background-color: #070324;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     align-items: end;
 }
 
 .contenedor-formulario form input[type="submit"]:hover {
-    background-color: #070324; /* Cambia el color de fondos del botón cuando se pasa el cursor por encima */
-    color: #ffffff; /* Cambia el color del texto del botón cuando se pasa el cursor por encima */
+    background-color: #070324;
+    color: #ffffff;
 }
 
 /* Estilos para la pagina de noticias */
@@ -412,11 +416,11 @@ aside ul li :hover{
     transform: scale(0.9) translateZ(25px);
 }
 #seccion-blog aside {
-    flex: 0 0 auto; /* Esto significa que el aside no crecerá ni se encogerá, y su base será su tamaño automático */
+    flex: 0 0 auto;
 }
 
 #seccion-blog article {
-    flex-grow: 1; /* Esto significa que el article crecerá para ocupar el espacio restante */
+    flex-grow: 1;
 }
 
 .contenedor-articulos {
@@ -474,39 +478,39 @@ article:hover {
 }
 
 .boton-like {
-    background-color: #449402; /* Cambia el color de fondo a verde */
+    background-color: #449402;
 }
 
 .boton-like:hover {
     background-color: #00826b;
-    transform: scale(1.1); /* Aumenta el tamaño del botón cuando se pasa el cursor por encima */
+    transform: scale(1.1);
 }
 
 .boton-dislike {
-    background-color: #570000; /* Cambia el color de fondo a rojo */
+    background-color: #570000;
 }
 
 .boton-dislike:hover {
     background-color: crimson;
-    transform: scale(1.1); /* Aumenta el tamaño del botón cuando se pasa el cursor por encima */
+    transform: scale(1.1);
 }
 
 .boton-compartir {
-    background-color: #ff4000; /* Cambia el color de fondo a amarillo */
+    background-color: #ff4000;
 }
 
 .boton-compartir:hover {
     background-color: #541500;
-    transform: scale(1.1); /* Aumenta el tamaño del botón cuando se pasa el cursor por encima */
+    transform: scale(1.1);
 }
 
 .boton-leer {
-    background-color: #714bca; /* Cambia el color de fondo a morado */
+    background-color: #714bca;
 }
 
 .boton-leer:hover {
     background-color: darkslateblue;
-    transform: scale(1.1); /* Aumenta el tamaño del botón cuando se pasa el cursor por encima */
+    transform: scale(1.1);
 }
 @keyframes scroll {
     0% { transform: translateX(0); }
@@ -533,7 +537,7 @@ article:hover {
 .carrusel-item {
     flex: 0 0 auto;
     width: 100%;
-    height: 10cm; /* Ajusta según sea necesario */
+    height: 10cm;
     scroll-snap-align: start;
     overflow: hidden;
     position: relative;
@@ -548,14 +552,14 @@ article:hover {
     overflow: hidden;
 }
 .carrusel-item figcaption {
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5);
     font-family: "Arial";
-    color: white; /* white text */
-    padding: 10px; /* some padding */
-    text-align: center; /* center the text */
-    position: absolute; /* position it absolutely... */
-    bottom: 0; /* ...at the bottom of the carrusel-item */
-    width: 100%; /* make it the full width of the carrusel-item */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     overflow: hidden;
 }
 .carrusel-flecha {
