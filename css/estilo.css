@@ -1,0 +1,495 @@
+h1{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: "Arial";
+    text-align: center;
+}
+nav {
+    background: #070324;
+    border: 2px solid #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: auto;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li{
+    flex-grow: 1;
+    text-align: center;
+    background: #ffffff;
+    display: inline-block;
+    padding: 0;
+    height: 100%;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li:hover {
+    background: #070324; /* Cambia el color de fondos cuando se pasa el cursor sobre el elemento */
+    transform: scale(0.9); /* Aumenta el tamaño del elemento */
+}
+
+nav ul li a{
+    font-family: "Arial";
+    font-size: 25px;
+    color: #070324;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: block;
+    padding: 15px 60px;
+}
+
+nav ul li:hover a{
+    color: #ffffff; /* Cambia el color del texto cuando se pasa el cursor por encima */
+    transform: scale(0.9); /* Aumenta el tamaño del elemento */
+}
+
+nav ul li a:active {
+    color: #000000; /* Cambia el color del texto cuando se selecciona el elemento */
+    transform: scale(0.9); /* Reduce el tamaño del elemento */
+}
+section{
+    background: url("../images/fondos/fondo-section.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #000000;
+    font-family: "Arial";
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid #000000;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+section h2 {
+    margin-bottom: 10px; /* Ajusta este valor para cambiar el espacio debajo del h2 */
+}
+
+section p {
+    margin-top: 5px; /* Ajusta este valor para cambiar el espacio encima del p */
+}
+
+.accesos-rapidos{
+    background: #070324;
+    border: 2px solid #000000;
+}
+
+.accesos-rapidos ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+.accesos-rapidos ul li{
+    flex-grow: 1;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 60px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+.accesos-rapidos ul li:hover {
+    background: #070324; /* Cambia el color de fondos cuando se pasa el cursor sobre el elemento */
+    transform: scale(0.9); /* Aumenta el tamaño del elemento */
+}
+.accesos-rapidos ul li a{
+    font-family: "Arial";
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.accesos-rapidos ul li a .icono {
+    margin-bottom: 10px; /* Ajusta este valor para cambiar el espacio entre el iconos y el nombre */
+}
+
+.accesos-rapidos-ampliados{
+    background: #ffffff;
+    border: 2px solid #000000;
+}
+.accesos-rapidos-ampliados h2{
+    color: #070324;
+    font-size: 30px;
+    font-family: "Arial";
+    margin-left: 50px;
+}
+.accesos-rapidos-ampliados a{
+    text-decoration: none;
+}
+.accesos-rapidos-ampliados a p{
+    font-weight: bolder;
+    background: #070324;
+    color: #aaaaaa;
+    font-size: 20px;
+    font-family: "Arial";
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.accesos-rapidos-ampliados a p:hover{
+    background: #aaaaaa;
+    color: #070324;
+}
+#seccion-otros-servicios p{
+    font-family: "Arial";
+    margin-left: 50px;
+    background: #ffffff;
+    color: #070324;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer{
+    background: #070324;
+    border: 2px solid #000000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: #ffffff;
+    font-family: "Arial";
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* Estilos para la pagina de formulario */
+#seccion-formulario {
+    background: url("../images/fondos/fondo-formulario.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #000000;
+    font-family: "Arial";
+    font-size: 20px;
+    border: 2px solid #000000;
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-formulario{
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 50px 200px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: transform 0.3s ease;
+}
+
+.contenedor-formulario:hover {
+    transform: scale(1.05) translateZ(10px);
+}
+.contenedor-formulario h2{
+    color: #070324;
+    font-family: "Arial";
+    font-size: 30px;
+    margin: 10px;
+}
+
+.contenedor-formulario .input-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px; /* Ajusta este valor para cambiar el espacio entre los grupos de entrada */
+}
+
+.contenedor-formulario .input-group label {
+    width: 6cm; /* Ajusta este valor para cambiar el ancho de los label */
+    text-align: left;
+}
+.contenedor-formulario .input-group input,textarea,select {
+    width: 10cm; /* Ajusta este valor para cambiar el ancho de los input */
+    height: 25px;
+}
+.contenedor-formulario .input-group input[type="date"] {
+    width: 381px;
+    text-align: center;
+}
+
+.contenedor-formulario .input-group select {
+    width: 385px;
+    text-align: center;
+}
+.contenedor-formulario .input-group textarea {
+    height: 50px;
+}
+.contenedor-formulario .input-group input[type="submit"] {
+    width: 100px;
+    height: 30px;
+    background: #070324;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contenedor-formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.contenedor-formulario form input[type="submit"] {
+    background-color: #070324; /* Cambia el color de fondos del botón */
+    color: #ffffff; /* Cambia el color del texto del botón */
+    border-radius: 5px; /* Añade bordes redondeados al botón */
+    padding: 10px 20px; /* Añade relleno alrededor del texto del botón */
+    font-size: 20px; /* Cambia el tamaño del texto del botón */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima del botón */
+    transition: background-color 0.3s ease; /* Añade una transición suave al cambiar el color de fondos */
+    align-items: end;
+}
+
+.contenedor-formulario form input[type="submit"]:hover {
+    background-color: #070324; /* Cambia el color de fondos del botón cuando se pasa el cursor por encima */
+    color: #ffffff; /* Cambia el color del texto del botón cuando se pasa el cursor por encima */
+}
+
+/* Estilos para la pagina de noticias */
+#section-noticias {
+    background: url("../images/fondos/fondo-noticias.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #000000;
+    font-family: "Arial";
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid #000000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    height: auto !important;
+}
+.noticia {
+    background: #ffffff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticia:hover {
+    transform: scale(1.05);
+}
+
+.noticia img {
+    width: 100%;
+    border: 1px solid #000;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.noticia h4 {
+    margin: 0;
+    font-size: 20px;
+    font-family: "Arial";
+    color: #000000;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.noticia p,h4 {
+    margin: 20px 0;
+}
+.boton-noticia {
+    background-color: #070324;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-top: auto;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton-noticia:hover {
+    background-color: #ffffff;
+    color: #070324;
+    border: 2px solid #070324;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/* Estilos para la pagina de blog*/
+#seccion-blog {
+    background: url("../images/fondos/fondo-blog.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #000000;
+    font-family: "Arial";
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid #000000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto !important;
+}
+aside{
+    text-align: center;
+    color: white;
+    background: #070324;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 50px 200px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: transform 0.3s ease;
+}
+aside:hover {
+    transform: scale(1.05) translateZ(10px);
+}
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+aside ul li {
+    margin-bottom: 10px;
+}
+aside ul li a {
+    background: white;
+    font-weight: bolder;
+    width: 10cm;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-decoration: none;
+    color: #070324;
+    font-size: 20px;
+    font-family: "Arial";
+    transition: color 0.2s ease;
+}
+aside ul li :hover{
+    text-align: center;
+    color: #00826b;
+    transform: scale(0.9) translateZ(25px);
+}
+#seccion-blog aside {
+    flex: 0 0 auto; /* Esto significa que el aside no crecerá ni se encogerá, y su base será su tamaño automático */
+}
+
+#seccion-blog article {
+    flex-grow: 1; /* Esto significa que el article crecerá para ocupar el espacio restante */
+}
+
+.contenedor-articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+article{
+    background: #ffffff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-botones {
+    display: flex;
+    justify-content: flex-end;
+}
+.boton-like,.boton-dislike,.boton-compartir,.boton-leer,.boton-noticia{
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    border: 1px solid #000;
+    margin: 10px;
+}
+.boton-noticia{
+    background-color: #070324;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-top: auto;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.boton-like {
+    background-color: #449402; /* Cambia el color de fondo a verde */
+}
+
+.boton-like:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón cuando se pasa el cursor por encima */
+}
+
+.boton-dislike {
+    background-color: #570000; /* Cambia el color de fondo a rojo */
+}
+
+.boton-dislike:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón cuando se pasa el cursor por encima */
+}
+
+.boton-compartir {
+    background-color: #ff4000; /* Cambia el color de fondo a amarillo */
+}
+
+.boton-compartir:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón cuando se pasa el cursor por encima */
+}
+
+.boton-leer {
+    background-color: #714bca; /* Cambia el color de fondo a morado */
+}
+
+.boton-leer:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón cuando se pasa el cursor por encima */
+}
