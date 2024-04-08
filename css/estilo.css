@@ -363,17 +363,21 @@ footer p{
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
     height: auto !important;
+    overflow: hidden;
+}
+aside,article,.carrusel{
+    margin-top: 20px;
 }
 aside{
+    margin-right: 20px;
     text-align: center;
     color: white;
     background: #070324;
     border: 2px solid #000000;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px;
     box-shadow: 0 50px 200px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     transition: transform 0.3s ease;
 }
@@ -424,15 +428,22 @@ aside ul li :hover{
 }
 
 article{
+    height: auto;
     background: #ffffff;
     border: 1px solid #000;
     border-radius: 10px;
     padding: 20px;
+    margin-right: 5px;
     margin-bottom: 20px;
     width: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    animation: ease-in-out 0.5s;
+}
+article:hover {
+    transform: scale(1.05);
 }
 .contenedor-botones {
     display: flex;
@@ -467,6 +478,7 @@ article{
 }
 
 .boton-like:hover {
+    background-color: #00826b;
     transform: scale(1.1); /* Aumenta el tamaño del botón cuando se pasa el cursor por encima */
 }
 
@@ -475,6 +487,7 @@ article{
 }
 
 .boton-dislike:hover {
+    background-color: crimson;
     transform: scale(1.1); /* Aumenta el tamaño del botón cuando se pasa el cursor por encima */
 }
 
@@ -483,6 +496,7 @@ article{
 }
 
 .boton-compartir:hover {
+    background-color: #541500;
     transform: scale(1.1); /* Aumenta el tamaño del botón cuando se pasa el cursor por encima */
 }
 
@@ -491,5 +505,73 @@ article{
 }
 
 .boton-leer:hover {
+    background-color: darkslateblue;
     transform: scale(1.1); /* Aumenta el tamaño del botón cuando se pasa el cursor por encima */
+}
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(-400%); }
+}
+
+.carrusel {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid;
+    animation: scroll 20s linear infinite;
+    display: flex;
+    gap: 20px;
+}
+
+.carrusel-item {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 10cm; /* Ajusta según sea necesario */
+    scroll-snap-align: start;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrusel-item img {
+    border: 1px solid;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.carrusel-item figcaption {
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    font-family: "Arial";
+    color: white; /* white text */
+    padding: 10px; /* some padding */
+    text-align: center; /* center the text */
+    position: absolute; /* position it absolutely... */
+    bottom: 0; /* ...at the bottom of the carrusel-item */
+    width: 100%; /* make it the full width of the carrusel-item */
+    overflow: hidden;
+}
+.carrusel-flecha {
+    position: absolute;
+    top: 50%;
+    font-size: 2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+}
+
+#carrusel-flecha-izquierda {
+    left: 10px;
+}
+
+#carrusel-flecha-derecha {
+    right: 10px;
 }
