@@ -11,6 +11,36 @@ nav {
     border-top-right-radius: 10px;
     height: auto;
 }
+.contenedor-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+}
+.logo img{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 30px;
+    box-shadow: 10px 0 100px rgba(0, 0, 0, 2);
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(0.8);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -478,38 +508,38 @@ article:hover {
 }
 
 .boton-like {
-    background-color: #449402;
+    background-color: #fbcc00;
 }
 
 .boton-like:hover {
-    background-color: #00826b;
+    background-color: #825000;
     transform: scale(1.1);
 }
 
 .boton-dislike {
-    background-color: #570000;
+    background-color: #ff0000;
 }
 
 .boton-dislike:hover {
-    background-color: crimson;
+    background-color: #550010;
     transform: scale(1.1);
 }
 
 .boton-compartir {
-    background-color: #ff4000;
+    background-color: #00ab78;
 }
 
 .boton-compartir:hover {
-    background-color: #541500;
+    background-color: #004b32;
     transform: scale(1.1);
 }
 
 .boton-leer {
-    background-color: #714bca;
+    background-color: #3b34ff;
 }
 
 .boton-leer:hover {
-    background-color: darkslateblue;
+    background-color: #23155c;
     transform: scale(1.1);
 }
 @keyframes scroll {
