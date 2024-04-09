@@ -43,17 +43,48 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    align-items: stretch;
+    justify-content: center;
     width: 100%;
     padding: 0;
     list-style: none;
 }
 
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        align-items: stretch;
+    }
+
+    nav ul li {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+}
+
+
 nav ul li{
+    min-height: 50px;
+    align-items: center;
     flex-grow: 1;
     text-align: center;
     background: #ffffff;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 0;
     height: 100%;
     transition: background-color 0.3s ease;
